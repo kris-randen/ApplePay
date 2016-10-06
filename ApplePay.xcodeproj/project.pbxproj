@@ -14,6 +14,7 @@
 		0D3FAF681DA5D73200C53028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3FAF661DA5D73200C53028 /* LaunchScreen.storyboard */; };
 		0D3FAF701DA61A4B00C53028 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3FAF6F1DA61A4B00C53028 /* Trainer.swift */; };
 		0D3FAF721DA61C7100C53028 /* TrainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3FAF711DA61C7100C53028 /* TrainerTableViewCell.swift */; };
+		0D3FAF741DA6226000C53028 /* TrainerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3FAF731DA6226000C53028 /* TrainerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0D3FAF691DA5D73200C53028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D3FAF6F1DA61A4B00C53028 /* Trainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainer.swift; sourceTree = "<group>"; };
 		0D3FAF711DA61C7100C53028 /* TrainerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerTableViewCell.swift; sourceTree = "<group>"; };
+		0D3FAF731DA6226000C53028 /* TrainerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,33 @@
 		0D3FAF5C1DA5D73200C53028 /* ApplePay */ = {
 			isa = PBXGroup;
 			children = (
+				0D3FAF761DA6228100C53028 /* Supporting Files */,
+				0D3FAF751DA6226F00C53028 /* Controller */,
 				0D3FAF711DA61C7100C53028 /* TrainerTableViewCell.swift */,
 				0D3FAF6F1DA61A4B00C53028 /* Trainer.swift */,
-				0D3FAF5D1DA5D73200C53028 /* AppDelegate.swift */,
-				0D3FAF5F1DA5D73200C53028 /* ViewController.swift */,
 				0D3FAF611DA5D73200C53028 /* Main.storyboard */,
+			);
+			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		0D3FAF751DA6226F00C53028 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D3FAF731DA6226000C53028 /* TrainerDetailViewController.swift */,
+				0D3FAF5F1DA5D73200C53028 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0D3FAF761DA6228100C53028 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D3FAF5D1DA5D73200C53028 /* AppDelegate.swift */,
 				0D3FAF641DA5D73200C53028 /* Assets.xcassets */,
 				0D3FAF661DA5D73200C53028 /* LaunchScreen.storyboard */,
 				0D3FAF691DA5D73200C53028 /* Info.plist */,
 			);
-			path = ApplePay;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +165,7 @@
 				0D3FAF701DA61A4B00C53028 /* Trainer.swift in Sources */,
 				0D3FAF721DA61C7100C53028 /* TrainerTableViewCell.swift in Sources */,
 				0D3FAF601DA5D73200C53028 /* ViewController.swift in Sources */,
+				0D3FAF741DA6226000C53028 /* TrainerDetailViewController.swift in Sources */,
 				0D3FAF5E1DA5D73200C53028 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
