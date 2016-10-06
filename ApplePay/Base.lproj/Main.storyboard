@@ -139,13 +139,14 @@
                                             <constraint firstAttribute="width" constant="100" id="efH-wc-cUZ"/>
                                             <constraint firstAttribute="height" constant="100" id="rdl-1X-lpt"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="uLp-2a-Atf" firstAttribute="centerX" secondItem="EOP-Cd-7C8" secondAttribute="centerX" id="JKs-s2-baM"/>
-                                    <constraint firstItem="uLp-2a-Atf" firstAttribute="centerY" secondItem="EOP-Cd-7C8" secondAttribute="centerY" id="j05-gk-B7Z"/>
+                                    <constraint firstAttribute="height" constant="130" id="2Ge-b0-3ob"/>
+                                    <constraint firstItem="uLp-2a-Atf" firstAttribute="centerX" secondItem="EOP-Cd-7C8" secondAttribute="centerX" id="EO3-FA-n4Q"/>
+                                    <constraint firstItem="uLp-2a-Atf" firstAttribute="centerY" secondItem="EOP-Cd-7C8" secondAttribute="centerY" id="HHC-Wu-LUz"/>
+                                    <constraint firstAttribute="width" constant="250" id="WuE-ER-S5W"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -154,17 +155,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="GPl-oL-wkz" secondAttribute="trailing" constant="50" id="DdT-hx-fnc"/>
                             <constraint firstItem="GPl-oL-wkz" firstAttribute="leading" secondItem="fnm-ar-abR" secondAttribute="leadingMargin" constant="50" id="LTt-at-XZX"/>
                             <constraint firstItem="GPl-oL-wkz" firstAttribute="top" secondItem="fIr-Op-OUs" secondAttribute="bottom" constant="10" id="Owi-b5-Ug1"/>
+                            <constraint firstItem="EOP-Cd-7C8" firstAttribute="top" secondItem="Iv6-76-lBF" secondAttribute="bottom" constant="20" id="QPN-9b-teO"/>
                             <constraint firstItem="Iv6-76-lBF" firstAttribute="centerX" secondItem="fnm-ar-abR" secondAttribute="centerX" id="VrF-mT-a6q"/>
-                            <constraint firstItem="EOP-Cd-7C8" firstAttribute="leading" secondItem="fnm-ar-abR" secondAttribute="leadingMargin" constant="50" id="Xyj-YL-gVM"/>
                             <constraint firstItem="Iv6-76-lBF" firstAttribute="top" secondItem="GPl-oL-wkz" secondAttribute="bottom" constant="20" id="Zah-pS-qNs"/>
-                            <constraint firstItem="a51-Do-Rt7" firstAttribute="top" secondItem="EOP-Cd-7C8" secondAttribute="bottom" constant="20" id="bYJ-0a-p4B"/>
+                            <constraint firstItem="EOP-Cd-7C8" firstAttribute="centerX" secondItem="fnm-ar-abR" secondAttribute="centerX" id="aRS-lW-cun"/>
                             <constraint firstItem="fIr-Op-OUs" firstAttribute="centerX" secondItem="fnm-ar-abR" secondAttribute="centerX" id="tgw-rX-nqc"/>
                             <constraint firstItem="fIr-Op-OUs" firstAttribute="top" secondItem="EvG-UC-Xu6" secondAttribute="bottom" constant="20" id="wlD-vn-DFq"/>
-                            <constraint firstItem="EOP-Cd-7C8" firstAttribute="top" secondItem="Iv6-76-lBF" secondAttribute="bottom" constant="20" id="yV4-Mf-5x9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EOP-Cd-7C8" secondAttribute="trailing" constant="50" id="yt8-4z-eR9"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="applePayView" destination="EOP-Cd-7C8" id="lvh-ha-MOO"/>
                         <outlet property="nameLabel" destination="fIr-Op-OUs" id="djy-o4-TqV"/>
                         <outlet property="priceLabel" destination="Iv6-76-lBF" id="Jzc-uI-yGU"/>
                         <outlet property="trainerImageView" destination="GPl-oL-wkz" id="3R5-SV-Sv7"/>
