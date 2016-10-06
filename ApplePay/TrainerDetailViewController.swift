@@ -54,6 +54,31 @@ class TrainerDetailViewController: UIViewController {
     }
     
     func applePayTapped() {
-        print("Apple Pay Tapped")
+        let request = PKPaymentRequest()
+        request.supportedNetworks = [
+            .amex,
+            .visa,
+            .masterCard,
+            .discover
+        ]
+        request.countryCode = "US"
+        request.currencyCode = "USD"
+        request.merchantIdentifier = "merchant.coach.campus.ApplePay"
+        request.merchantCapabilities = [
+            .capability3DS,
+            .capabilityCredit,
+            .capabilityDebit
+        ]
+        
+        let applePay = PKPaymentSummaryItem(label: "\(trainer.name)'s Fee", amount: trainer.priceDecimal, type: .final)
+        let total = PKPaymentSummaryItem(label: "Campus Coach", amount: 10.00, type: .final)
+        
+        request.paymentSummaryItems = [
+            applePay,
+            total
+        ]
+        
+        let applePayViewController = PKPaymentAuthorizationViewController(paymentRequest: request)
+        self.present(applePayViewController, animated: true, completion: nil)
     }
 }

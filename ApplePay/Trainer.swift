@@ -12,12 +12,14 @@ class Trainer {
     var name: String
     var fullName: String
     var price: Double
+    var priceDecimal: NSDecimalNumber
     var image: UIImage?
     
     init(name: String = "", fullName: String = "Monica Bellucci", price: Double = 10.00, image: UIImage? = nil) {
         self.name = name
         self.fullName = fullName
         self.price = price
+        self.priceDecimal = NSDecimalNumber(string: "\(self.price)")
         self.image = image
     }
 }
