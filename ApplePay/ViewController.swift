@@ -25,11 +25,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return trainers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TrainerTableViewCell {
+            
+            cell.nameLabel.text = trainers[indexPath.row].name
+            cell.priceLabel.text = "$\(trainers[indexPath.row].price)"
+            cell.trainerImageView.image = trainers[indexPath.row].image
+            
             return cell
         } else {
             return UITableViewCell()

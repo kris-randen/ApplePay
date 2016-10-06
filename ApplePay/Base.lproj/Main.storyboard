@@ -21,7 +21,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ci3-aP-gd4">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="300" id="MGs-YP-UCI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="300" id="MGs-YP-UCI" customClass="TrainerTableViewCell" customModule="ApplePay" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MGs-YP-UCI" id="Xx3-ho-Bfa">
@@ -54,7 +54,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monica Bellucci I" translatesAutoresizingMaskIntoConstraints="NO" id="ptI-j5-w1Y"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monica Bellucci I" translatesAutoresizingMaskIntoConstraints="NO" id="ptI-j5-w1Y"/>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ptI-j5-w1Y" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="9i9-A3-sIV"/>
@@ -70,6 +70,11 @@
                                                 <constraint firstItem="Mew-37-1oz" firstAttribute="top" secondItem="ZJk-ac-RoO" secondAttribute="bottom" constant="8" id="vi0-8l-esY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="yne-7a-EBL" id="EoJ-1s-Ctw"/>
+                                            <outlet property="priceLabel" destination="Mew-37-1oz" id="n6y-H2-FpA"/>
+                                            <outlet property="trainerImageView" destination="ptI-j5-w1Y" id="pwH-CA-xde"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

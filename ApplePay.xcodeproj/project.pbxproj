@@ -12,6 +12,8 @@
 		0D3FAF631DA5D73200C53028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3FAF611DA5D73200C53028 /* Main.storyboard */; };
 		0D3FAF651DA5D73200C53028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3FAF641DA5D73200C53028 /* Assets.xcassets */; };
 		0D3FAF681DA5D73200C53028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3FAF661DA5D73200C53028 /* LaunchScreen.storyboard */; };
+		0D3FAF701DA61A4B00C53028 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3FAF6F1DA61A4B00C53028 /* Trainer.swift */; };
+		0D3FAF721DA61C7100C53028 /* TrainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3FAF711DA61C7100C53028 /* TrainerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0D3FAF641DA5D73200C53028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D3FAF671DA5D73200C53028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D3FAF691DA5D73200C53028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D3FAF6F1DA61A4B00C53028 /* Trainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainer.swift; sourceTree = "<group>"; };
+		0D3FAF711DA61C7100C53028 /* TrainerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		0D3FAF5C1DA5D73200C53028 /* ApplePay */ = {
 			isa = PBXGroup;
 			children = (
+				0D3FAF711DA61C7100C53028 /* TrainerTableViewCell.swift */,
+				0D3FAF6F1DA61A4B00C53028 /* Trainer.swift */,
 				0D3FAF5D1DA5D73200C53028 /* AppDelegate.swift */,
 				0D3FAF5F1DA5D73200C53028 /* ViewController.swift */,
 				0D3FAF611DA5D73200C53028 /* Main.storyboard */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3FAF701DA61A4B00C53028 /* Trainer.swift in Sources */,
+				0D3FAF721DA61C7100C53028 /* TrainerTableViewCell.swift in Sources */,
 				0D3FAF601DA5D73200C53028 /* ViewController.swift in Sources */,
 				0D3FAF5E1DA5D73200C53028 /* AppDelegate.swift in Sources */,
 			);
