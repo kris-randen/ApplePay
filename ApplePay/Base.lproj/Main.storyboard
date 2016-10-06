@@ -20,16 +20,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ci3-aP-gd4">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6MZ-rY-siU">
-                                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="MGs-YP-UCI">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="300"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="300" id="MGs-YP-UCI">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MGs-YP-UCI" id="Xx3-ho-Bfa">
                                             <frame key="frameInset" width="375" height="299"/>
@@ -37,33 +30,44 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJk-ac-RoO">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="tco-BM-nIS"/>
+                                                        <constraint firstAttribute="height" constant="25" id="Uvq-Qw-KEJ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monica $10 / hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdb-sl-PGb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yne-7a-EBL">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="VaT-DL-wdk"/>
+                                                        <constraint firstAttribute="width" constant="100" id="IfD-mG-mvf"/>
+                                                        <constraint firstAttribute="height" constant="21" id="LVB-Az-ta3"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monica Bellucci I" translatesAutoresizingMaskIntoConstraints="NO" id="W5Q-TF-jUS"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10 / hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mew-37-1oz">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="97P-wb-YQx"/>
+                                                        <constraint firstAttribute="width" constant="75" id="DRI-Zw-FWi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monica Bellucci I" translatesAutoresizingMaskIntoConstraints="NO" id="ptI-j5-w1Y"/>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="W5Q-TF-jUS" firstAttribute="top" secondItem="sdb-sl-PGb" secondAttribute="bottom" constant="10" id="0Ch-pD-5Bn"/>
-                                                <constraint firstItem="ZJk-ac-RoO" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="86V-Nt-DCR"/>
-                                                <constraint firstItem="sdb-sl-PGb" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="DJb-h9-bxj"/>
-                                                <constraint firstItem="ZJk-ac-RoO" firstAttribute="top" secondItem="Xx3-ho-Bfa" secondAttribute="topMargin" constant="15" id="FrO-hd-gxc"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ZJk-ac-RoO" secondAttribute="trailing" constant="50" id="RTp-ZA-EtW"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="sdb-sl-PGb" secondAttribute="trailing" constant="50" id="Wxe-OG-dCa"/>
-                                                <constraint firstItem="W5Q-TF-jUS" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="eRY-Ni-11e"/>
-                                                <constraint firstItem="sdb-sl-PGb" firstAttribute="top" secondItem="ZJk-ac-RoO" secondAttribute="bottom" constant="8" id="kH9-Om-1pL"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="W5Q-TF-jUS" secondAttribute="bottom" constant="10" id="o3t-qo-vxp"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="W5Q-TF-jUS" secondAttribute="trailing" constant="50" id="vxg-yN-e3T"/>
+                                                <constraint firstItem="ptI-j5-w1Y" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="9i9-A3-sIV"/>
+                                                <constraint firstItem="ptI-j5-w1Y" firstAttribute="top" secondItem="yne-7a-EBL" secondAttribute="bottom" constant="10" id="Dmd-9V-2vF"/>
+                                                <constraint firstItem="ZJk-ac-RoO" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="JCw-6r-rao"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ptI-j5-w1Y" secondAttribute="bottom" constant="10" id="L0O-Lu-PEs"/>
+                                                <constraint firstItem="ZJk-ac-RoO" firstAttribute="top" secondItem="Xx3-ho-Bfa" secondAttribute="topMargin" constant="15" id="Obi-UX-pYx"/>
+                                                <constraint firstItem="yne-7a-EBL" firstAttribute="top" secondItem="ZJk-ac-RoO" secondAttribute="bottom" constant="8" id="SG1-nn-ePl"/>
+                                                <constraint firstItem="Mew-37-1oz" firstAttribute="leading" secondItem="yne-7a-EBL" secondAttribute="trailing" constant="10" id="brV-cE-2bK"/>
+                                                <constraint firstItem="yne-7a-EBL" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="kjZ-2a-vkw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZJk-ac-RoO" secondAttribute="trailing" constant="50" id="tAe-lE-hGU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ptI-j5-w1Y" secondAttribute="trailing" constant="50" id="uhb-Vf-rcr"/>
+                                                <constraint firstItem="Mew-37-1oz" firstAttribute="top" secondItem="ZJk-ac-RoO" secondAttribute="bottom" constant="8" id="vi0-8l-esY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -79,6 +83,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Apple Pay" id="eDz-as-J5b"/>
+                    <connections>
+                        <outlet property="tableView" destination="ci3-aP-gd4" id="6ef-m8-79c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
