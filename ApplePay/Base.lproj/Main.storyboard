@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ufm-es-1c0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apple Pay-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ApplePay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ci3-aP-gd4">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6MZ-rY-siU">
+                                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="MGs-YP-UCI">
+                                        <rect key="frame" x="0.0" y="136" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MGs-YP-UCI" id="Xx3-ho-Bfa">
+                                            <frame key="frameInset" width="375" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJk-ac-RoO">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="tco-BM-nIS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monica $10 / hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdb-sl-PGb">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="VaT-DL-wdk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monica Bellucci I" translatesAutoresizingMaskIntoConstraints="NO" id="W5Q-TF-jUS"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="W5Q-TF-jUS" firstAttribute="top" secondItem="sdb-sl-PGb" secondAttribute="bottom" constant="10" id="0Ch-pD-5Bn"/>
+                                                <constraint firstItem="ZJk-ac-RoO" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="86V-Nt-DCR"/>
+                                                <constraint firstItem="sdb-sl-PGb" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="DJb-h9-bxj"/>
+                                                <constraint firstItem="ZJk-ac-RoO" firstAttribute="top" secondItem="Xx3-ho-Bfa" secondAttribute="topMargin" constant="15" id="FrO-hd-gxc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZJk-ac-RoO" secondAttribute="trailing" constant="50" id="RTp-ZA-EtW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sdb-sl-PGb" secondAttribute="trailing" constant="50" id="Wxe-OG-dCa"/>
+                                                <constraint firstItem="W5Q-TF-jUS" firstAttribute="leading" secondItem="Xx3-ho-Bfa" secondAttribute="leadingMargin" constant="50" id="eRY-Ni-11e"/>
+                                                <constraint firstItem="sdb-sl-PGb" firstAttribute="top" secondItem="ZJk-ac-RoO" secondAttribute="bottom" constant="8" id="kH9-Om-1pL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="W5Q-TF-jUS" secondAttribute="bottom" constant="10" id="o3t-qo-vxp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="W5Q-TF-jUS" secondAttribute="trailing" constant="50" id="vxg-yN-e3T"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ci3-aP-gd4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LFg-xH-6NK"/>
+                            <constraint firstAttribute="trailing" secondItem="ci3-aP-gd4" secondAttribute="trailing" id="M1Q-bU-w2b"/>
+                            <constraint firstItem="ci3-aP-gd4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pTp-8a-81t"/>
+                            <constraint firstItem="ci3-aP-gd4" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="wqh-BS-qxi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Apple Pay" id="eDz-as-J5b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509.5999999999999" y="-73.313343328335833"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7i4-rc-o6t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ufm-es-1c0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NhB-Ow-v3s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iHQ-uR-e25"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcK-XF-YoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.60000000000002" y="-73.313343328335833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Monica Bellucci I" width="386" height="386"/>
+    </resources>
+</document>
