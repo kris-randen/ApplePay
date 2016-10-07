@@ -9,7 +9,7 @@
 import UIKit
 import PassKit
 
-class TrainerDetailViewController: UIViewController {
+class TrainerDetailViewController: UIViewController, PKPaymentAuthorizationViewControllerDelegate {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var trainerImageView: UIImageView!
@@ -53,6 +53,14 @@ class TrainerDetailViewController: UIViewController {
         applePayView.addSubview(applePayButton)
     }
     
+    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
+        completion(.invalidShippingPostalAddress)
+    }
+    
+    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
     func applePayTapped() {
         let request = PKPaymentRequest()
         request.supportedNetworks = [
@@ -79,6 +87,7 @@ class TrainerDetailViewController: UIViewController {
         ]
         
         let applePayViewController = PKPaymentAuthorizationViewController(paymentRequest: request)
+        applePayViewController.delegate = self
         self.present(applePayViewController, animated: true, completion: nil)
     }
 }
